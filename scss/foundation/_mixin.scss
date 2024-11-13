@@ -1,0 +1,16 @@
+/* mixin
+*--------------------------------------*/
+// font-size指定にremを利用する（引数：表示するpx数）
+@mixin font-size($size, $base: 16) {
+    font-size: $size + px;
+    font-size: ($size / $base) + rem;
+}
+
+// ブレークポイント
+@mixin breakpoint($point) {
+    @if $point == sp {
+        @media (max-width: 960px) {
+            @content;
+        }
+    }
+}

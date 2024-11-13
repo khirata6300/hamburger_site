@@ -1,0 +1,17 @@
+/* sidebar
+*--------------------------------------*/
+@use "./../foundation/color"as *;
+
+.l-sidebar {
+    position: fixed;
+    margin-left: 80%;
+    width: 100%;
+    max-width: 20%;
+    top: 0;
+    left: 0;
+    padding: 1% 0 0 46px;
+    background-color: $color-beije;
+    overflow-y: scroll; //サイドメニューをスクロールさせるための対応
+    height: 100%;       //サイドメニューをスクロールさせるための対応
+    z-index: 10;
+}

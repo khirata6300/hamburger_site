@@ -1,0 +1,11 @@
+/* menu
+*--------------------------------------*/
+@use "./../../foundation/mixin" as *;
+
+.c-menu {
+    &__list {
+        font-weight: bold;
+        @include font-size(24);
+        padding-top: 90px;
+    }
+}

@@ -1,0 +1,17 @@
+/* main-visual
+*--------------------------------------*/
+@use "sass:math";
+
+$title-height: 40px;    //page-titleのフォントサイズ
+
+.p-main-visual {
+    height: 530px;
+    background-size: cover;
+    background: url(../../../img/mainvisual-pc.jpg) no-repeat center center;
+    position: relative;
+    &__title {
+        position: absolute;
+        top: calc( 50% - math.div( #{$title-height}, 2));   //フォントサイズの1/2マイナス
+        left: 86px;
+    }
+}

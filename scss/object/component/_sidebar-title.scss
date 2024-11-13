@@ -1,0 +1,10 @@
+/* sidebar-title
+*--------------------------------------*/
+@use "./../../foundation/mixin" as *;
+
+.c-sidebar-title {
+    font-family: "Roboto", sans-serif;
+    @include font-size(34);
+    font-weight: bold;
+
+}

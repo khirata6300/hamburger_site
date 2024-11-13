@@ -1,0 +1,37 @@
+/* base
+*--------------------------------------*/
+@use "./color" as *;
+@use "./mixin" as *;
+html {
+    font-size: 100%;
+    line-height: 1.6;
+    height: 100%;
+}
+body {
+    color: $color-base;
+    overflow-x: hidden;
+    font-family: "M PLUS 1p", sans-serif;
+    background-color: $color-skin;
+    //max-width: 1980px;
+    &.is-open {
+        overflow-y: hidden;
+    }
+}
+img{
+    max-width: 100%;
+    height: auto;
+    border: none;
+    display: block;
+}
+li {
+    list-style: none;
+}
+h1 {
+    @include font-size(60);
+}
+h2 {
+    @include font-size(36);
+}
+h3, h4, h5 {
+    @include font-size(20);
+}

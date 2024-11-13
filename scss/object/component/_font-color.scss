@@ -1,0 +1,9 @@
+/* color
+*--------------------------------------*/
+@use "./../../foundation/color" as *;
+
+.c-font-color {
+    &--gray {
+        color: $color-gray;
+    }
+}

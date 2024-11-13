@@ -1,0 +1,8 @@
+/* header-title
+*--------------------------------------*/
+@use "./../../foundation/mixin" as *;
+
+.c-header-title {
+    font-weight: bold;
+    @include font-size(64);
+}

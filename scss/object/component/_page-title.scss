@@ -1,0 +1,7 @@
+/* page-title
+*--------------------------------------*/
+@use "./../../foundation/mixin" as *;
+
+.c-page-title {
+    @include font-size(40);
+}
