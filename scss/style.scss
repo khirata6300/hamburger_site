@@ -26,6 +26,7 @@
 @use "./object/component/menu";
 @use "./object/component/menu-child";
 @use "./object/component/page-title";
+@use "./object/component/line";
 
 /*------------------------*
 * project
@@ -33,8 +34,10 @@
 @use "./object/project/main-visual";
 @use "./object/project/type";
 @use "./object/project/eat-type";
+@use "./object/project/describe";
 
 /*------------------------*
 * utility
 *-------------------------*/
 @use "./object/utility/padding";
+@use "./object/utility/margin";

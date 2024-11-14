@@ -1,0 +1,13 @@
+/* line
+*--------------------------------------*/
+@use "./../../foundation/color" as *;
+
+.c-line {
+    &--short {
+        content: "";
+        width: 63px;
+        height: 4px;
+        display: inline;
+        background-color: $color-base;
+    }
+}

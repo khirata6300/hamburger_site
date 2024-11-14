@@ -2,5 +2,9 @@
 *--------------------------------------*/
 
 .p-type {
-    padding: 120px 120px 30px 120px
+    padding: 120px 120px 30px 120px;
+    &__divide {
+        margin: 0 3%;
+        width: 50%;
+    }
 }
