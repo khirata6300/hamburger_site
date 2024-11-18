@@ -1,0 +1,12 @@
+/* footer
+*--------------------------------------*/
+@use "./../foundation/color" as *;
+
+.l-footer {
+    height: 150px;
+    width: 100%;
+    background-color: $color-brown;
+    padding: 41px 0 27px 0;
+    position: relative;
+    z-index: 50;
+}

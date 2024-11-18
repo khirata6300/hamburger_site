@@ -30,10 +30,12 @@
         <header class="l-header l-inner">
             <div class="c-flex--sb">
                 <h1 class="c-site-title c-font-color--gray">Hamburger</h1>
-                <div class="c-flex--sb c-search">
-                    <input type="search" class="c-search__form"/>
-                    <button class="c-search__button">検索</button>
-                </div>
+                <form action="#" class="c-flex--sb c-search">
+                    <div class="c-search__content">
+                        <input type="text" class="c-search__content__form" placeholder="キーワードを入力"/>
+                    </div>
+                    <button type="submit" class="c-search__button">検索</button>
+                </form>
             </div>
         </header>
         <main class="l-inner">
@@ -41,7 +43,7 @@
                 <h2 class="c-page-title p-main-visual__title">ダミーサイト</h2>
             </section>
             <section class="p-type">
-                <div class="l-wrapper c-flex--sb">
+                <div class="c-flex--sb">
                     <div class="p-type__divide">
                         <div class="p-eat-type--to">
                             <h3 class="p-eat-type__title">Take Out<div class="c-line--short p-eat-type__title__line"></div></h3>
@@ -75,17 +77,19 @@
                 </div>
             </section>
             <section class="p-access">
-                <div class="l-wrapper c-mask p-access__area">
-                    <h5 class="p-access_title">見出しが入ります</h5>
-                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                    </p>
+                <div class="c-mask--black p-access-map">
+                    <div class="c-mask--black--thin p-access-map__area">
+                        <h5 class="p-access-map__area__title">見出しが入ります
+                            <div class="c-line--short--thin p-access-map__area__title__line"></div>
+                        </h5>
+                        <p class="p-access-map__area__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                        </p>
+                    </div>
                 </div>
             </section>
         </main>
@@ -121,9 +125,9 @@
             </ul>
         </aside>
         <footer class="l-footer">
-            <ul class="c-flex--center">
-                <li class="p-footer-content">ショップ情報</li>
-                <li class="p-footer-content--last">ヒストリー</li>
+            <ul class="c-flex--center c-footer-content">
+                <li class="c-footer-content__list">ショップ情報</li>
+                <li class="c-footer-content__list">ヒストリー</li>
             </ul>
             <small class="c-copy-light">Copyright: Raise Tech</small>
         </footer>

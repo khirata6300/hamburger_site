@@ -9,5 +9,12 @@
         height: 4px;
         display: inline;
         background-color: $color-base;
+        &--thin {
+            content: "";
+            width: 75px;
+            height: 2px;
+            display: inline;
+            background-color: $color-base;
+        }
     }
 }

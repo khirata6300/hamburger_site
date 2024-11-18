@@ -12,6 +12,7 @@
 @use "./layout/header";
 @use "./layout/sidebar";
 @use "./layout/inner";
+@use "./layout/footer";
 
 /*--------------------------------------*
 * object
@@ -27,6 +28,10 @@
 @use "./object/component/menu-child";
 @use "./object/component/page-title";
 @use "./object/component/line";
+@use "./object/component/mask";
+@use "./object/component/footer-content";
+@use "./object/component/copy-light";
+@use "./object/component/search";
 
 /*------------------------*
 * project
@@ -35,6 +40,8 @@
 @use "./object/project/type";
 @use "./object/project/eat-type";
 @use "./object/project/describe";
+@use "./object/project/access";
+@use "./object/project/access-map";;
 
 /*------------------------*
 * utility

@@ -1,0 +1,9 @@
+/* copy-light
+*--------------------------------------*/
+@use "./../../foundation/mixin" as *;
+
+.c-copy-light {
+    display: block;
+    text-align: center;
+    @include font-size(14);
+}

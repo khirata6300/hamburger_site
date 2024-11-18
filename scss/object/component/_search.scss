@@ -1,0 +1,47 @@
+/* search
+*--------------------------------------*/
+@use "./../../foundation/color" as *;
+
+.c-search {
+    align-items: center;
+    overflow: hidden;
+    &__content {
+        //input要素は擬似要素が使用できないため、div要素をinput要素の上に重ねる
+        display: inline-block;
+        position: relative;
+        &::before {
+            //虫眼鏡アイコン
+            content: "";
+            width: 24px;
+            height: 24px;
+            background: url(./../../../img/mushimegane.svg) no-repeat center center / auto 100%;
+            display: inline-block;
+            position: absolute;
+            top: 11px;
+            left: 12px;
+        }
+        &__form {
+            width: 396px;
+            height: 46px;
+            padding: 5px 15px 5px 61px;
+            box-sizing: border-box;
+            outline: none;
+            background-color: $color-base;
+            border: 1px solid $color-gray;
+            border-radius: 10px;
+            margin-right: 14px;
+            &::placeholder {
+                color: $color-gray;
+            }
+        }
+    }
+    &__button {
+        width: 136px;
+        height: 46px;
+        border: 1px solid $color-gray;
+        background-color: $color-light-gray;
+        color: $color-gray;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+}

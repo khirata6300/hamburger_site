@@ -1,0 +1,12 @@
+/* mask
+*--------------------------------------*/
+
+.c-mask {
+    &--black {
+        background-color: rgba(0,0,0,0.6);
+        &--thin {
+            background-color: rgba(0,0,0,0.25);
+        }
+    }
+
+}

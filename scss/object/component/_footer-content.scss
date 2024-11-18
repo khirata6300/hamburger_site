@@ -1,0 +1,13 @@
+/* footer-content
+*--------------------------------------*/
+
+.c-footer-content {
+    padding-bottom: 32px;
+    &__list {
+        font-size: 20px;
+        padding: 0 10px;
+        &:first-child {
+            border-right: 1px solid #FFF;
+        }        
+    }
+}

@@ -6,9 +6,11 @@ $title-height: 40px;    //page-titleのフォントサイズ
 
 .p-main-visual {
     height: 530px;
-    background-size: cover;
-    background: url(../../../img/mainvisual-pc.jpg) no-repeat center center;
+    background-image: url(../../../img/mainvisual-pc.jpg);
     position: relative;
+    background-size: cover;
+    background-position: center center;
+    object-fit: cover;
     &__title {
         position: absolute;
         top: calc( 50% - math.div( #{$title-height}, 2));   //フォントサイズの1/2マイナス
