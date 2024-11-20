@@ -5,7 +5,9 @@
 .l-footer {
     height: 150px;
     width: 100%;
-    background-color: $color-brown;
+    //background-color: $color-brown;
+    background-image: url(./../../img/footer.jpg);
+    background-repeat: repeat;
     padding: 41px 0 27px 0;
     position: relative;
     z-index: 50;
