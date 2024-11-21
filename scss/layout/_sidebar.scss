@@ -3,7 +3,8 @@
 @use "./../foundation/color"as *;
 
 .l-sidebar {
-    position: fixed;
+    //position: fixed;
+    position: absolute; //サイドメニューをスクロールさせない対応
     margin-left: 80%;
     width: 100%;
     max-width: 20%;
@@ -11,8 +12,9 @@
     left: 0;
     padding-top: 84px;
     padding-left:46px;
-    padding-bottom: 170px;
+    //padding-bottom: 170px;
     background-color: $color-beije;
-    overflow-y: scroll; //サイドメニューをスクロールさせる
+    //overflow-y: scroll; //サイドメニューをスクロールさせる
     height: 100%;
+    min-height: 100%;
 }

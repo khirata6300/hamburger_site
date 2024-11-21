@@ -57,7 +57,7 @@ h3, h4, h5 {
 /* sidebar
 *--------------------------------------*/
 .l-sidebar {
-  position: fixed;
+  position: absolute;
   margin-left: 80%;
   width: 100%;
   max-width: 20%;
@@ -65,10 +65,9 @@ h3, h4, h5 {
   left: 0;
   padding-top: 84px;
   padding-left: 46px;
-  padding-bottom: 170px;
   background-color: #F2EDE9;
-  overflow-y: scroll;
   height: 100%;
+  min-height: 100%;
 }
 
 /* flex
@@ -252,6 +251,16 @@ h3, h4, h5 {
   border-radius: 10px;
 }
 
+/* page-container
+*--------------------------------------*/
+.c-page-container {
+  position: relative;
+  min-height: 100%;
+}
+.c-page-container__child {
+  position: absolute;
+}
+
 /* main-visual
 *--------------------------------------*/
 .p-main-visual {
@@ -317,6 +326,11 @@ h3, h4, h5 {
 .p-describe {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.p-describe__text {
+  flex-grow: 1;
 }
 
 /* access
