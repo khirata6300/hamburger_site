@@ -1,11 +1,15 @@
 /* type
 *--------------------------------------*/
+@use "./../../foundation/mixin" as *;
 
 .p-type {
-    padding: 120px 120px 30px 120px;
+    padding: 120px;
+    @include breakpoint(tablet){
+        padding: 40px;
+    }
     &__divide {
-        margin: 0 3%;
-        width: 50%;
+        //margin: 0 3%;
+        width: 48%;
 
         //TakeOut,EatInの高さ揃え対応
         display: flex;

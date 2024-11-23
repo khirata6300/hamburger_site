@@ -1,5 +1,6 @@
 /* flex
 *--------------------------------------*/
+@use "./../../foundation/mixin" as *;
 
 .c-flex {
     display: flex;

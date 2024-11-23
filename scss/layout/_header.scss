@@ -1,8 +1,28 @@
 /* header
 *--------------------------------------*/
+@use "./../foundation/mixin" as *;
 
 .l-header {
     height: 217px;
     align-items: center;
     padding: 67px 46px;
+    position: relative;
+    @include breakpoint(tablet) {
+        padding-top: 40px;
+        text-align: center;
+    }
+    &__content {
+        @include breakpoint(tablet) {
+            flex-direction: column;
+        }
+    }
+    &__menu {
+        display: none;  //PC時は非表示
+        @include breakpoint(tablet) {
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 25px;
+        }
+    }
 }

@@ -1,0 +1,9 @@
+/* site-title
+*--------------------------------------*/
+@use "./../../foundation/mixin" as *;
+
+.c-site-title {
+    @include breakpoint(tablet) {
+        @include font-size(40);
+    }
+}

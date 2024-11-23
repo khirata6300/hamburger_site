@@ -1,7 +1,11 @@
-/* flex
+/* inner
 *--------------------------------------*/
+@use "./../foundation/mixin" as *;
 
 .l-inner {
     width: 100%;
     max-width: 80%;
+    @include breakpoint(tablet) {
+        max-width: 100%;
+    }
 }

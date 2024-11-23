@@ -1,0 +1,10 @@
+/* header-menu
+*--------------------------------------*/
+@use "./../../foundation/color" as *;
+@use "./../../foundation/mixin" as *;
+
+.c-header-menu {
+    @include font-size(34);
+    font-weight: bold;
+    cursor: pointer;
+}

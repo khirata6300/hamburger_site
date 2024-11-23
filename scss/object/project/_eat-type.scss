@@ -1,5 +1,6 @@
 /* eat-type
 *--------------------------------------*/
+@use "./../../foundation/mixin" as *;
 
 .p-eat-type {
     &--to {
@@ -39,6 +40,9 @@
         font-weight: bold;
         padding-left: 1%;
         position: relative;
+        @include breakpoint(tablet){
+            @include font-size(44);
+        }
         &__line {
             position: absolute;
             bottom: 0;

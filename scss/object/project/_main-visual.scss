@@ -1,6 +1,7 @@
 /* main-visual
 *--------------------------------------*/
 @use "sass:math";
+@use "./../../foundation/mixin" as *;
 
 $title-height: 40px;    //page-titleのフォントサイズ
 
@@ -11,9 +12,15 @@ $title-height: 40px;    //page-titleのフォントサイズ
     background-size: cover;
     background-position: center center;
     object-fit: cover;
+    @include breakpoint(tablet) {
+        height: 285px;
+    }
     &__title {
         position: absolute;
         top: calc( 50% - math.div( #{$title-height}, 2));   //フォントサイズの1/2マイナス
         left: 86px;
+        @include breakpoint(tablet) {
+            font-size: 36px;
+        }
     }
 }

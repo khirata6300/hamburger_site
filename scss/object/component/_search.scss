@@ -1,10 +1,15 @@
 /* search
 *--------------------------------------*/
 @use "./../../foundation/color" as *;
+@use "./../../foundation/mixin" as *;
 
 .c-search {
     align-items: center;
     overflow: hidden;
+    @include breakpoint(tablet) {
+        justify-content: center;
+        padding-top: 30px;
+    }
     &__content {
         //input要素は擬似要素が使用できないため、div要素をinput要素の上に重ねる
         display: inline-block;

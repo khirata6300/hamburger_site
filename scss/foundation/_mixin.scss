@@ -8,8 +8,15 @@
 
 // ブレークポイント
 @mixin breakpoint($point) {
+    //タブレット用
+    @if $point == tablet {
+        @media (max-width: 1280px) {
+            @content;
+        }
+    }
+    //sp用
     @if $point == sp {
-        @media (max-width: 960px) {
+        @media (max-width: 768px) {
             @content;
         }
     }
