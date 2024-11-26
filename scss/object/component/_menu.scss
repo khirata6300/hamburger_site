@@ -4,6 +4,7 @@
 
 .c-menu {
     &__list {
+        transition: all 0.3s;
         font-weight: bold;
         @include font-size(24);
         padding-top: 90px;

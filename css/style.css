@@ -84,14 +84,15 @@ h3, h4, h5 {
   margin-left: 80%;
   width: 100%;
   max-width: 20%;
+  height: 100%;
+  min-height: 100%;
   top: 0;
   left: 0;
   padding-top: 84px;
   padding-left: 46px;
   background-color: #F2EDE9;
-  height: 100%;
-  min-height: 100%;
-  transform: 0.3s;
+  z-index: 20;
+  transition: all 300ms 0s ease;
 }
 @media (max-width: 1280px) {
   .l-sidebar {
@@ -100,6 +101,36 @@ h3, h4, h5 {
     top: 0;
     left: 100%;
   }
+}
+
+.is-open .l-sidebar {
+  display: block;
+  left: 0%;
+  overflow-y: auto;
+  position: fixed;
+}
+.is-open .l-sidebar__close {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.is-open .l-sidebar__close::before, .is-open .l-sidebar__close::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  width: 45px;
+  height: 6px;
+  background-color: #707070;
+}
+.is-open .l-sidebar__close::before {
+  transform: rotate(-315deg);
+}
+.is-open .l-sidebar__close::after {
+  transform: rotate(315deg);
 }
 
 /* inner
@@ -165,10 +196,14 @@ h3, h4, h5 {
   font-size: 2.125rem;
   font-weight: bold;
 }
+.is-open .c-sidebar-title {
+  display: none;
+}
 
 /* menu
 *--------------------------------------*/
 .c-menu__list {
+  transition: all 0.3s;
   font-weight: bold;
   font-size: 24px;
   font-size: 1.5rem;
@@ -222,6 +257,19 @@ h3, h4, h5 {
 }
 .c-mask--black--thin {
   background-color: rgba(0, 0, 0, 0.25);
+}
+
+.is-open .c-mask--whole {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow-y: hidden;
 }
 
 /* footer-content
