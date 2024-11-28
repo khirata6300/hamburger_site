@@ -20,10 +20,16 @@
     z-index: 20;
     transition: all 300ms 0s ease;
     @include breakpoint(tablet) {
-        display: none;
+        //display: none;
+        margin-left: 56%;
+        max-width: 44%;
         position: absolute;
         top: 0;
         left: 100%;
+    }
+    @include breakpoint(sp) {
+        margin-left: 12.5%;
+        max-width: 87.5%;
     }
 }
 

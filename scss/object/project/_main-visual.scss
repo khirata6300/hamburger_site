@@ -4,6 +4,9 @@
 @use "./../../foundation/mixin" as *;
 
 $title-height: 40px;    //page-titleのフォントサイズ
+@include breakpoint(tablet) {
+    $title-height: 36px;
+}
 
 .p-main-visual {
     height: 530px;
@@ -15,12 +18,16 @@ $title-height: 40px;    //page-titleのフォントサイズ
     @include breakpoint(tablet) {
         height: 285px;
     }
+    @include breakpoint(sp) {
+        height: 375px;
+    }
     &__title {
         position: absolute;
         top: calc( 50% - math.div( #{$title-height}, 2));   //フォントサイズの1/2マイナス
         left: 86px;
+        @include font-size($title-height);
         @include breakpoint(tablet) {
-            font-size: 36px;
+            left: 25px;
         }
     }
 }

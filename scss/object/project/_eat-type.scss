@@ -43,6 +43,9 @@
         @include breakpoint(tablet){
             @include font-size(44);
         }
+        @include breakpoint(sp){
+            @include font-size(41);
+        }
         &__line {
             position: absolute;
             bottom: 0;

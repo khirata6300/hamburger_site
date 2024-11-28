@@ -1,8 +1,14 @@
 /* padding
 *--------------------------------------*/
+@use "./../../foundation/mixin" as *;
 
 .u-padding {
     &--none {
         padding: 0;
+    }
+    &__type--sp {
+        @include breakpoint(sp) {
+            padding-bottom: 20px;
+        }
     }
 }

@@ -5,6 +5,11 @@
 .p-access-map {
     z-index: 10;
     height: 100%;
+    // @include breakpoint(sp) {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     flex-direction: column;
+    // }
     &__area {
         width: 60%;
         padding: 120px;
@@ -13,6 +18,9 @@
         @include breakpoint(tablet) {
             width: 100%;
             padding: 40px
+        }
+        @include breakpoint(sp) {
+            width: 100%;
         }
         &__title {
             @include font-size(36);

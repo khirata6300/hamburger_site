@@ -7,6 +7,14 @@
     @include breakpoint(tablet){
         padding: 40px;
     }
+    @include breakpoint(sp){
+        padding: 20px 20px 50px 20px;
+    }
+    &__content {
+        @include breakpoint(sp){
+            flex-direction: column;
+        }
+    }
     &__divide {
         //margin: 0 3%;
         width: 48%;
@@ -14,5 +22,8 @@
         //TakeOut,EatInの高さ揃え対応
         display: flex;
         flex-direction: column;
+        @include breakpoint(sp){
+            width: 100%;
+        }
     }
 }

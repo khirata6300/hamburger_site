@@ -24,5 +24,9 @@
             top: 20px;
             right: 25px;
         }
+        @include breakpoint(sp) {
+            top: 8px;
+            right: 8px;
+        }
     }
 }
