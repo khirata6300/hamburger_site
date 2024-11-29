@@ -3,25 +3,23 @@
 @use "./../../foundation/mixin" as *;
 
 .p-access-map {
+    position: relative;
     z-index: 10;
     height: 100%;
-    // @include breakpoint(sp) {
-    //     display: flex;
-    //     justify-content: space-between;
-    //     flex-direction: column;
-    // }
     &__area {
+        position: relative;
         width: 60%;
         padding: 120px;
         height: 100%;
         z-index: 20;
         @include breakpoint(tablet) {
             width: 100%;
-            padding: 40px
+            padding: 40px;
         }
         @include breakpoint(sp) {
-            width: 100%;
+            height: 60%
         }
+
         &__title {
             @include font-size(36);
             padding-bottom: 50px;

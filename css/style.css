@@ -535,16 +535,19 @@ h3, h4, h5 {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  background-size: cover;
+  position: relative;
+  z-index: 0;
 }
 
 /* access-map
 *--------------------------------------*/
 .p-access-map {
+  position: relative;
   z-index: 10;
   height: 100%;
 }
 .p-access-map__area {
+  position: relative;
   width: 60%;
   padding: 120px;
   height: 100%;
@@ -558,7 +561,7 @@ h3, h4, h5 {
 }
 @media (max-width: 768px) {
   .p-access-map__area {
-    width: 100%;
+    height: 60%;
   }
 }
 .p-access-map__area__title {
