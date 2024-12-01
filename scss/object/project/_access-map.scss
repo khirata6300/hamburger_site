@@ -17,6 +17,7 @@
             padding: 40px;
         }
         @include breakpoint(sp) {
+            background-color: rgba(0,0,0,0.25);
             height: 60%
         }
 
@@ -43,6 +44,21 @@
             @include breakpoint(tablet) {
                 margin-top: 15px;
             }
+        }
+    }
+}
+
+
+//試し
+.test {
+    height: 500px;
+    width: 100%;
+    &_mask {
+        background-color: rgba(100,200,20,0.6);
+        height: 100%;
+        &_second {
+            background-color: rgba(0,0,0,0.25);
+            height: 60%;
         }
     }
 }

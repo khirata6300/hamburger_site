@@ -535,7 +535,7 @@ h3, h4, h5 {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  position: relative;
+  background-size: cover;
   z-index: 0;
 }
 
@@ -561,6 +561,7 @@ h3, h4, h5 {
 }
 @media (max-width: 768px) {
   .p-access-map__area {
+    background-color: rgba(0, 0, 0, 0.25);
     height: 60%;
   }
 }
@@ -595,6 +596,19 @@ h3, h4, h5 {
   .p-access-map__area__text {
     margin-top: 15px;
   }
+}
+
+.test {
+  height: 500px;
+  width: 100%;
+}
+.test_mask {
+  background-color: rgba(100, 200, 20, 0.6);
+  height: 100%;
+}
+.test_mask_second {
+  background-color: rgba(0, 0, 0, 0.25);
+  height: 60%;
 }
 
 /* padding
