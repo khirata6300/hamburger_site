@@ -1,8 +1,12 @@
 /* footer-content
 *--------------------------------------*/
+@use "./../../foundation/mixin" as *;
 
 .c-footer-content {
     padding-bottom: 32px;
+    @include breakpoint(sp) {
+        padding-bottom: 70px;
+    }
     &__list {
         font-size: 20px;
         padding: 0 10px;

@@ -1,5 +1,6 @@
 /* access
 *--------------------------------------*/
+@use "./../../foundation/mixin" as *;
 
 .p-access {
     //height: 1000px;
@@ -9,4 +10,32 @@
     background-size: cover;
     position: relative;
     z-index: 0;
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        z-index: 10;
+        height: 100%;
+        width: 60%;
+        background-color: rgba(0,0,0,0.6);
+        display: block;
+        @include breakpoint(tablet) {
+            width: 100%;
+        }
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        z-index: 20;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.25);
+        display: block;
+        @include breakpoint(sp) {
+            height: 60%;
+        }
+    }
 }
