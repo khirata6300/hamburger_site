@@ -1,0 +1,15 @@
+/* archive
+*--------------------------------------*/
+@use "./../../foundation/color" as *;
+@use "./../../foundation/mixin" as *;
+
+.p-archive {
+    padding: 63px 100px;
+    &__title {
+        @include font-size(36);
+        margin-bottom: 20px;
+    }
+    &__text {
+        margin-bottom: 70px;
+    }
+}

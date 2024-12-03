@@ -415,6 +415,14 @@ h3, h4, h5 {
   }
 }
 
+/* grid
+*--------------------------------------*/
+.grid--archive {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(1, 1fr);
+}
+
 /* main-visual
 *--------------------------------------*/
 .p-main-visual {
@@ -491,6 +499,7 @@ h3, h4, h5 {
   padding: 16px;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 .p-eat-type--ei {
   background: url(../../../img/eat-in.jpg);
@@ -501,11 +510,13 @@ h3, h4, h5 {
   padding: 16px;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 .p-eat-type__describe {
   margin-top: 80%;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 .p-eat-type__title {
   font-size: 80px;
@@ -677,6 +688,20 @@ h3, h4, h5 {
   display: inline-block;
   font-size: 16px;
   font-size: 1rem;
+}
+
+/* archive
+*--------------------------------------*/
+.p-archive {
+  padding: 63px 100px;
+}
+.p-archive__title {
+  font-size: 36px;
+  font-size: 2.25rem;
+  margin-bottom: 20px;
+}
+.p-archive__text {
+  margin-bottom: 70px;
 }
 
 /* padding

@@ -35,6 +35,7 @@
 @use "./object/component/page-container";
 @use "./object/component/site-title";
 @use "./object/component/header-menu";
+@use "./object/component/grid";
 
 /*------------------------*
 * project
@@ -46,6 +47,7 @@
 @use "./object/project/access";
 @use "./object/project/access-map";
 @use "./object/project/archive-visual";
+@use "./object/project/archive";
 
 /*------------------------*
 * utility
