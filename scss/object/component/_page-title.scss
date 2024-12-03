@@ -3,5 +3,10 @@
 @use "./../../foundation/mixin" as *;
 
 .c-page-title {
-    @include font-size(40);
+    &--front {
+        @include font-size(40);
+    }
+    &--archive {
+        @include font-size(60);
+    }
 }

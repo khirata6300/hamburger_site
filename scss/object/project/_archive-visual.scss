@@ -1,0 +1,41 @@
+/* archive-visual
+*--------------------------------------*/
+@use "sass:math";
+@use "./../../foundation/mixin" as *;
+
+$title-height: 60px;    //archive-titleのフォントサイズ
+
+.p-archive-visual {
+    height: 239px;
+    background-image: url(../../../img/page-title_arcive@2x.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    object-fit: cover;
+    &::after {
+        background-color: rgba(0,0,0,0.4);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        content: "";
+        z-index: 10;
+    }
+    &__title {
+        position: absolute;
+        top: calc( 50% - math.div( #{$title-height}, 2));   //フォントサイズの1/2マイナス
+        left: 86px;
+        z-index: 100;
+        @include font-size($title-height);
+        @include breakpoint(tablet) {
+            left: 25px;
+        }
+    }
+    &__text {
+        padding-left: 19px; 
+        vertical-align: middle;
+        display: inline-block;
+        @include font-size(16);
+    }
+}

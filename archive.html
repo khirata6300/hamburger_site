@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+        <!-- サイトタイトル -->
+        <title>ハンバーガーサイト</title>
+        <!-- サイトの説明文 -->
+        <meta name="discription" content="ハンバーガーサイト">
+        <!-- ファビコン読み込み -->
+        <link rel="icon" href="./img/favicon.ico">
+        <!-- サイト制作者 -->
+        <meta name="author" content="hirata"/>
+        <!-- ress.min.css読み込み -->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+         <!-- Google Fonts読み込み -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- M PLUS 1p  -->
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+        <!-- Roboto -->
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- css読み込み -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- jQuery読み込み -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div class="c-page-container">
+            <header class="l-header l-inner js-header">
+                <div class="l-header__content c-flex--sb">
+                    <h1 class="c-site-title c-font-color--gray"><a href="./index.html">Hamburger</a></h1>
+                    <form action="#" class="c-flex--sb c-search">
+                        <div class="c-search__content">
+                            <input type="text" class="c-search__content__form" placeholder="キーワードを入力"/>
+                        </div>
+                        <button type="submit" class="c-search__button">検索</button>
+                    </form>
+                </div>
+                <div class="c-mask--whole"></div>
+                <div class="c-header-menu c-font-color--gray l-header__menu js-header-menu">Menu</div>
+            </header>
+            <main class="l-inner">
+                <section class="p-archive-visual">
+                    <h2 class="c-page-title--archive p-archive-visual__title">Menu:<p class="p-archive-visual__text">チーズバーガー</p></h2>
+                </section>
+            </main>
+            <aside class="l-sidebar c-font-color--gray c-page-container__child js-sideber">
+                <div class="l-sidebar__close c-font-color--gray js-sidebar-close"></div>
+                <div class="c-sidebar-title">Menu</div>
+                <ul class="c-menu">
+                    <li class="c-menu__list">バーガー</li>
+                    <ul class="c-menu-child">
+                        <li class="c-menu-child__list">ハンバーガー</li>
+                        <li class="c-menu-child__list"><a href="./archive.html">チーズバーガー</a></li>
+                        <li class="c-menu-child__list">テリヤキバーガー</li>
+                        <li class="c-menu-child__list">アボガドバーガー</li>
+                        <li class="c-menu-child__list">フィッシュバーガー</li>
+                        <li class="c-menu-child__list">ベーコンバーガー</li>
+                        <li class="c-menu-child__list u-padding--none">チキンバーガー</li>
+                    </ul>
+                    <li class="c-menu__list">サイド</li>
+                    <ul class="c-menu-child">
+                        <li class="c-menu-child__list">ポテト</li>
+                        <li class="c-menu-child__list">サラダ</li>
+                        <li class="c-menu-child__list">ナゲット</li>
+                        <li class="c-menu-child__list u-padding--none">コーン</li>
+                    </ul>
+                    <li class="c-menu__list">ドリンク</li>
+                    <ul class="c-menu-child">
+                        <li class="c-menu-child__list">コーラ</li>
+                        <li class="c-menu-child__list">ファンタ</li>
+                        <li class="c-menu-child__list">オレンジ</li>
+                        <li class="c-menu-child__list">アップル</li>
+                        <li class="c-menu-child__list">紅茶（Ice/Hot）</li>
+                        <li class="c-menu-child__list u-padding--none">コーヒー（Ice/Hot）</li>
+                    </ul>
+                </ul>
+            </aside>
+        </div>
+        <footer>
+
+        </footer>
+    </body>
+</html>
