@@ -479,6 +479,8 @@ h3, h4, h5 {
 }
 .p-type__divide {
   width: 48%;
+  min-height: 800px;
+  align-items: stretch;
   display: flex;
   flex-direction: column;
 }
@@ -500,6 +502,7 @@ h3, h4, h5 {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  align-items: stretch;
 }
 .p-eat-type--ei {
   background: url(../../../img/eat-in.jpg);
@@ -547,9 +550,9 @@ h3, h4, h5 {
 .p-describe {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 16px;
-  display: flex;
-  flex-direction: column;
+  flex-grow: 1;
 }
+
 /* access
 *--------------------------------------*/
 .p-access {

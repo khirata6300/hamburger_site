@@ -14,6 +14,7 @@
         display: flex;
         flex-direction: column;
         flex-grow: 1;
+        align-items: stretch;
     }
     &--ei {
         background: url(../../../img/eat-in.jpg);
