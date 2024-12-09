@@ -3,44 +3,32 @@
 @use "./../../foundation/mixin" as *;
 
 .p-eat-type {
-    &--to {
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 16px;
+    width: 48%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    @include breakpoint(sp){
+        width: 100%;
+    }
+    &--takeout {
         background: url(../../../img/take-out.jpg);
-        object-fit: cover;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 16px;
-
-        //TakeOut,EatInの高さ揃え対応
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-        align-items: stretch;
     }
-    &--ei {
+    &--eatin {
         background: url(../../../img/eat-in.jpg);
-        object-fit: cover;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 16px;
-
-        //TakeOut,EatInの高さ揃え対応
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-    }
-    &__describe {
-        margin-top: 80%;
-
-        //TakeOut,EatInの高さ揃え対応
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
+        @include breakpoint(sp){
+            margin-top: 20px;
+        }
     }
     &__title {
         font-size: 80px;
         font-weight: bold;
         padding-left: 1%;
         position: relative;
+        margin-bottom: 60%;
         @include breakpoint(tablet){
             @include font-size(44);
         }
@@ -53,4 +41,62 @@
             left: 1%;
         }
     }
+    &__contents {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
 }
+
+    //flex: 1 0 auto;
+    // &--to {
+    //     background: url(../../../img/take-out.jpg);
+    //     object-fit: cover;
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     padding: 16px;
+    //     width: 48%;
+
+    //     //TakeOut,EatInの高さ揃え対応
+    //     display: flex;
+    //     justify-content: space-between;
+    //     flex-direction: column;
+    //     //flex: 1 0 auto;
+    // }
+    // &--ei {
+    //     background: url(../../../img/eat-in.jpg);
+    //     object-fit: cover;
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     padding: 16px;
+    //     width: 48%;
+
+    //     //TakeOut,EatInの高さ揃え対応
+    //     display: flex;
+    //     flex-direction: column;
+    //     //flex: 1 0 auto;
+    // }
+    // &__describe {
+    //     //TakeOut,EatInの高さ揃え対応
+    //     display: flex;
+    //     flex-direction: column;
+    //     //flex: 1 0 auto;
+    //     &__title {
+    //         font-size: 80px;
+    //         font-weight: bold;
+    //         padding-left: 1%;
+    //         position: relative;
+    //         @include breakpoint(tablet){
+    //             @include font-size(44);
+    //         }
+    //         @include breakpoint(sp){
+    //             @include font-size(41);
+    //         }
+    //         &__line {
+    //             position: absolute;
+    //             bottom: 0;
+    //             left: 1%;
+    //         }
+    //     }
+    // }
+// }

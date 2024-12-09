@@ -473,59 +473,46 @@ h3, h4, h5 {
   }
 }
 @media (max-width: 768px) {
-  .p-type__content {
+  .p-type__contents {
     flex-direction: column;
-  }
-}
-.p-type__divide {
-  width: 48%;
-  min-height: 800px;
-  align-items: stretch;
-  display: flex;
-  flex-direction: column;
-}
-@media (max-width: 768px) {
-  .p-type__divide {
-    width: 100%;
   }
 }
 
 /* eat-type
 *--------------------------------------*/
-.p-eat-type--to {
+.p-eat-type {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 16px;
+  width: 48%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .p-eat-type {
+    width: 100%;
+  }
+}
+.p-eat-type--takeout {
   background: url(../../../img/take-out.jpg);
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  align-items: stretch;
 }
-.p-eat-type--ei {
+.p-eat-type--eatin {
   background: url(../../../img/eat-in.jpg);
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
 }
-.p-eat-type__describe {
-  margin-top: 80%;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+@media (max-width: 768px) {
+  .p-eat-type--eatin {
+    margin-top: 20px;
+  }
 }
 .p-eat-type__title {
   font-size: 80px;
   font-weight: bold;
   padding-left: 1%;
   position: relative;
+  margin-bottom: 60%;
 }
 @media (max-width: 1280px) {
   .p-eat-type__title {
@@ -544,13 +531,19 @@ h3, h4, h5 {
   bottom: 0;
   left: 1%;
 }
+.p-eat-type__contents {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
 
 /* describe
 *--------------------------------------*/
 .p-describe {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 16px;
-  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 /* access
