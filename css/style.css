@@ -488,7 +488,7 @@ h3, h4, h5 {
   padding: 16px;
   width: 48%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-direction: column;
 }
 @media (max-width: 768px) {
@@ -497,10 +497,10 @@ h3, h4, h5 {
   }
 }
 .p-eat-type--takeout {
-  background: url(../../../img/take-out.jpg);
+  background-image: url(../../../img/take-out.jpg);
 }
 .p-eat-type--eatin {
-  background: url(../../../img/eat-in.jpg);
+  background-image: url(../../../img/eat-in.jpg);
 }
 @media (max-width: 768px) {
   .p-eat-type--eatin {

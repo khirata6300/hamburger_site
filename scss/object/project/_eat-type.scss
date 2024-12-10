@@ -9,16 +9,16 @@
     padding: 16px;
     width: 48%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-direction: column;
     @include breakpoint(sp){
         width: 100%;
     }
     &--takeout {
-        background: url(../../../img/take-out.jpg);
+        background-image: url(../../../img/take-out.jpg);
     }
     &--eatin {
-        background: url(../../../img/eat-in.jpg);
+        background-image: url(../../../img/eat-in.jpg);
         @include breakpoint(sp){
             margin-top: 20px;
         }
