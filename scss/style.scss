@@ -36,6 +36,7 @@
 @use "./object/component/site-title";
 @use "./object/component/header-menu";
 @use "./object/component/grid";
+@use "./object/component/botton";
 
 /*------------------------*
 * project
@@ -48,6 +49,8 @@
 @use "./object/project/access-map";
 @use "./object/project/archive-visual";
 @use "./object/project/archive";
+@use "./object/project/card-archive";
+
 
 /*------------------------*
 * utility
